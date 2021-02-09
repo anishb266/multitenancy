@@ -1,2 +1,2 @@
-# Dynamic Multi-Tenancy using Spring Boot + Hibernate (Reloaded) (Same or Different Databases)
+# Dynamic Multi-Tenancy using Spring Boot + Hibernate (Reloaded)
 Spring Boot + Hibernate Multi-tenancy
