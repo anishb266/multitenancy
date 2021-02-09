@@ -46,7 +46,7 @@ public class MultiTenantJPAConfiguration {
 		return new TenantIdentifierResolver();
 	}
 
-	@Bean(name = "repositoryDataSources")
+	@Bean(name = "multipleDataSources")
 	public Map<String, DataSource> repositoryDataSources() {
 		Map<String, DataSource> datasources = new HashMap<>();
 		multiTenantProperties.getDatasources().forEach((key, value) -> datasources.put(key, createDataSource(value)));

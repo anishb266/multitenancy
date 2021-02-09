@@ -7,7 +7,7 @@ import org.springframework.boot.context.properties.ConfigurationProperties;
 import org.springframework.stereotype.Component;
 
 @Component
-@ConfigurationProperties(value = "repository")
+@ConfigurationProperties(value = "multitenant")
 public class MultiTenantProperties {
 
 	private Map<String, Map<String, String>> datasources = new LinkedHashMap<>();

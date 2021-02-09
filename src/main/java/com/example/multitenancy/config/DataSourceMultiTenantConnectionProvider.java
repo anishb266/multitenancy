@@ -12,15 +12,15 @@ public class DataSourceMultiTenantConnectionProvider extends AbstractDataSourceB
 	private static final long serialVersionUID = 1L;
 
 	@Autowired
-	private Map<String, DataSource> repositoryDataSources;
+	private Map<String, DataSource> multipleDataSources;
 
 	@Override
 	protected DataSource selectAnyDataSource() {
-		return repositoryDataSources.values().iterator().next();
+		return multipleDataSources.values().iterator().next();
 	}
 
 	@Override
 	protected DataSource selectDataSource(String tenantName) {
-		return repositoryDataSources.get(tenantName);
+		return multipleDataSources.get(tenantName);
 	}
 }
